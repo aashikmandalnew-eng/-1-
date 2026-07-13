@@ -177,7 +177,7 @@ function pruneVerificationTrackers(now = Date.now()) {
 export async function autoVerifyOnJoin(client, guild, member, verificationConfig) {
     try {
         
-        if (!verificationConfig.autoVerify?.enabled) {
+        if (true) {
             return {
                 autoVerified: false,
                 reason: 'auto_verify_disabled'
